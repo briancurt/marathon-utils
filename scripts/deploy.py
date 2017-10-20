@@ -24,7 +24,7 @@ def check_deployment(c,new_app_id):
 def check_health(c,new_app_id):
     # Currently, for apps with multiple health checks, if the first reports healthy
     # the app is marked as healthy during deployment. Add a double-check of the health if any
-    # deployment is marked as successful and that is not true. Timeout after 120s.
+    # deployment is marked as successful and that's not true. Timeout after 120s.
     # There is already a jira issue on Mesosphere's tracker to give this implementation more context
     # In the meantime, this should provide a barrier for apps that do not pass all checks.
     print ("Re-checking health...")
